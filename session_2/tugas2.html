@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="text-align: center; font-family: 'Courier New', monospace;">
+    <header>
+        <img style="border-radius: 50%" src="assets/me.jpg" alt="Your Image" class="rounded-image" width="200" height="200">
+        <h1>Mohammad Fatoni Anggris</h1>
+        <p class="contact">Email: mfatoni@gmail.com | Phone: (123) 456-7890</p>
+    </header>
+
+    <main">
+        <section id="social">
+            <h2>Touch ME</h2>
+            <a href="https://twitter.com/livyyrenata" target="_blank">
+                <img src="assets/twitter.png" alt="Twitter" width="52" height="52">
+            </a>
+            <a href="https://www.instagram.com/vonnyfelicia" target="_blank">
+                <img src="assets/ig.png" alt="Instagram" width="50" height="50">
+            </a>
+            <a href="https://www.linkedin.com/in/mohammad-fatoni-anggris-7089a2172" target="_blank">
+                <img src="assets/linkedin.png" alt="Linkedin" width="50" height="50">
+            </a>
+        </section>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>
+                Highly motivated and skilled web developer with 5 years of experience creating dynamic and user-friendly websites. Proficient in HTML, CSS, JavaScript, and various front-end libraries and frameworks. A strong problem solver with a keen eye for design and a passion for creating seamless user experiences.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <table style="text-align: left;">
+                <tr>
+                    <tr>
+                        <td>
+                            <h3>Senior Web Developer - Acitya Tech</h3>
+                                <p class="job-date">January 2019 - Present</p>
+                        </td>
+                        <td>
+                            <h3>Web Developer - Utsman Scholl</h3>
+                                <p class="job-date">June 2017 - December 2018</p>
+                        </td>
+                    </tr>
+                    <td>
+                        <div class="job">
+                            
+                            <ul>
+                                <li>Develop and maintain client websites using HTML, CSS, and JavaScript.</li>
+                                <li>Collaborate with the design and product teams to implement user interface improvements.</li>
+                                <li>Optimize website performance and troubleshoot cross-browser compatibility issues.</li>
+                                <li>Lead a team of junior developers and provide technical guidance and mentorship.</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="job">
+                 
+                            <ul>
+                                <li>Assisted in building custom WordPress themes and plugins for clients.</li>
+                                <li>Implemented responsive design principles to ensure seamless mobile experiences.</li>
+                                <li>Collaborated with back-end developers to integrate front-end interfaces with server-side applications.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>   
+      
+            </table>    
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Bachelor of Science in Computer Science - University of Brawijaya</h3>
+                <p class="education-date">September 2012 - May 2016</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>React</p>
+                <p>jQuery</p>
+                <p>Bootstrap</p>
+                <p>Git</p>
+                <p>Responsive Design</p>
+                <p>UI/UX Design</p>
+        </section>
+
+        <section id="inquiry">
+            <h2>Inquiry</h2>
+            <div class="inquiry">
+                <form action="submit_form.php" method="post">
+                    <label for="email"><b>Email:</b></label>
+                    <br>
+                    
+                    <input type="email" id="email" name="email" required>
+                    
+                    <br>
+                    <br>
+
+                    <label for="question"><b>Question:</b></label>
+                    <br>
+                    
+                    <textarea id="question" name="question" rows="4" cols="100" required></textarea>
+                    
+                    <br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <br>
+            <br>
+        </section>
+    </main>
+
+    <footer ">
+        <strong>&copy; 2023 Fatoni Anggris. All rights reserved.</strong>
+    </footer>
+</body>
+</html>

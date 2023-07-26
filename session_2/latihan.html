@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Form</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Portfolio Result</h1>
+    <div>
+      <h3>M Fatoni Anggris</h3>
+    </div>
+    <div>
+      <button>Edit Resume</button>
+    </div>
+    <br />
+    <div>
+      <strong>Availbility:</strong>
+      <span>Full Time</span>
+    </div>
+    <div>
+      <strong>Usia:</strong>
+      <span>19</span>
+    </div>
+    <div>
+      <strong>Lokasi:</strong>
+      <span>Jakarta</span>
+    </div>
+    <div>
+      <strong>Pengalaman:</strong>
+      <span>2 Tahun</span>
+    </div>
+    <div>
+      <strong>Email:</strong>
+      <a
+        href="mailto:contoh10@gmail.com?subject=Ini%20adalah%20judul%20email%20default&body=Pesan%20ini%20akan%20secara%20otomatis%20muncul%20lho%21"
+        >email@gmail.com</a
+      >
+    </div>
+    <h1>Portfolio Submission Form</h1>
+    <form action="/submit_portfolio" method="POST">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role" required /><br />
+
+      <label for="avail">Availbility:</label>
+      <input type="text" id="avail" name="avail" required /><br />
+
+      <label for="usia">Usia:</label>
+      <input type="text" id="usia" name="usia" required /><br />
+
+      <label for="lokasi">Lokasi:</label>
+      <input type="url" id="lokasi" name="lokasi" /><br />
+
+      <label for="image">Pengalaman:</label>
+      <input type="number" id="pengalaman" name="pengalaman" /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
