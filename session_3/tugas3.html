@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Form</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="row">
+      <h1 class="text-center pd-10">Portfolio Result</h1>
+      <div class="grid-container">
+        <section class="text-center">
+          <img
+            style="border-radius: 50%"
+            src="assets/me.jpg"
+            alt="Your Image"
+            class="rounded-image"
+            width="150"
+            height="150"
+          />
+          <h3>Touch ME</h3>
+          <a href="https://twitter.com/livyyrenata" target="_blank">
+            <img
+              src="assets/twitter.png"
+              alt="Twitter"
+              width="32"
+              height="32"
+            />
+          </a>
+          <a href="https://www.instagram.com/vonnyfelicia" target="_blank">
+            <img src="assets/ig.png" alt="Instagram" width="30" height="30" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohammad-fatoni-anggris-7089a2172"
+            target="_blank"
+          >
+            <img
+              src="assets/linkedin.png"
+              alt="Linkedin"
+              width="30"
+              height="30"
+            />
+          </a>
+        </section>
+        <section>
+          <div>
+            <h2>M Fatoni Anggris</h2>
+          </div>
+          <div>
+            <h4>FullStack Developer</h4>
+          </div>
+          <div>
+            <button class="button-resume">Resume</button>
+            <button class="button-kontak">Kontak</button>
+          </div>
+        </section>
+        <section>
+          <div class="mt-10">
+            <strong>Availbility:</strong><br />
+            <span>Full Time</span>
+          </div>
+          <div class="mt-10">
+            <strong>Usia:</strong><br />
+            <span>19</span>
+          </div>
+          <div class="mt-10">
+            <strong>Lokasi:</strong><br />
+            <span>Jakarta</span>
+          </div>
+          <div class="mt-10">
+            <strong>Pengalaman:</strong><br />
+            <span>2 Tahun</span>
+          </div>
+          <div class="mt-10">
+            <strong>Email:</strong><br />
+            <a
+              href="mailto:contoh10@gmail.com?subject=Ini%20adalah%20judul%20email%20default&body=Pesan%20ini%20akan%20secara%20otomatis%20muncul%20lho%21"
+              >email@gmail.com
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <h1 class="text-center pd-10">Portfolio Submission Form</h1>
+      <div class="form-container">
+        <form action="/submit_portfolio" method="POST">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="role">Role:</label>
+          <input type="text" id="role" name="role" required /><br />
+
+          <label for="avail">Availbility:</label>
+          <input type="text" id="avail" name="avail" required /><br />
+
+          <label for="usia">Usia:</label>
+          <input type="text" id="usia" name="usia" required /><br />
+
+          <label for="lokasi">Lokasi:</label>
+          <input type="url" id="lokasi" name="lokasi" /><br />
+
+          <label for="image">Pengalaman:</label>
+          <input type="number" id="pengalaman" name="pengalaman" /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+          <br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
