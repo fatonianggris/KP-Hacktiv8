@@ -1,0 +1,17 @@
+Judul Algoritma: Menghitung Luas dan Keliling Lingkaran
+
+Input yang Diperlukan:
+
+Panjang jari-jari lingkaran (r)
+Langkah Kalkulasi:
+
+Menerima input berupa panjang jari-jari lingkaran (r) dari pengguna.
+Hitung luas lingkaran (luas) dengan rumus: luas = π * r^2
+Hitung keliling lingkaran (keliling) dengan rumus: keliling = 2 * π * r
+Instruksi untuk Menampilkan Hasil Kalkulasi dengan HTML:
+Buat sebuah halaman HTML dengan form untuk menerima input panjang jari-jari lingkaran dari pengguna dan tombol untuk menghitung.
+Setelah pengguna memasukkan nilai jari-jari dan menekan tombol hitung, lakukan langkah-langkah berikut:
+
+Ambil nilai panjang jari-jari dari input form menggunakan JavaScript.
+Lakukan perhitungan luas dan keliling lingkaran dengan rumus di atas menggunakan JavaScript.
+Tampilkan hasil perhitungan luas dan keliling lingkaran di dalam elemen HTML dengan menggunakan JavaScript.
