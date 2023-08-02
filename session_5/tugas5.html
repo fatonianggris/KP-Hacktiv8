@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh Input dan List</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+      ol {
+        list-style-type: decimal;
+      }
+    </style>
+  </head>
+  <body style="text-align: center">
+    <input type="text" id="textInput" placeholder="Masukkan teks" />
+    <input type="number" id="numberInput" placeholder="Masukkan angka" />
+    <button class="button-resume" onclick="cetakList()">Cetak List</button>
+    <ol class="center" id="listContainer"></ol>
+
+    <script>
+      function cetakList() {
+        // Ambil nilai dari input text
+        const textInputValue = document.getElementById("textInput").value;
+
+        // Ambil nilai dari input number
+        const numberInputValue = document.getElementById("numberInput").value;
+
+        // Ambil kontainer <ol> untuk menambahkan <li>
+        const listContainer = document.getElementById("listContainer");
+
+        // Buat loop untuk menambahkan <li> ke dalam <ol>
+        for (let i = 1; i <= numberInputValue; i++) {
+          const listItem = document.createElement("li");
+          listItem.textContent = textInputValue;
+          listContainer.appendChild(listItem);
+        }
+      }
+    </script>
+  </body>
+</html>
