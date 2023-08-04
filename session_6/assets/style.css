@@ -1,0 +1,128 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+header {
+    text-align: right;
+    background-color: #333;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a.active {
+    background-color: #555;
+}
+
+.row {
+    background-color: #fff;
+    padding-inline: 10px 10px 10px 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    /* Creates 3 equal-width columns */
+    grid-gap: 10px;
+    /* Gap between grid items */
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.pd-5 {
+    padding-top: 5px;
+}
+
+.pd-10 {
+    padding-top: 10px;
+}
+
+.paragraf {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Button active effect */
+button:active {
+    background-color: #081421;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

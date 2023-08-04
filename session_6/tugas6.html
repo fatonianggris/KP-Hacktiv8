@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body class="text-center">
+    <input type="number" id="numberInput" placeholder="Masukkan angka" />
+    <button class="button-resume" onclick="cetakList()">Cetak List</button>
+    <div class="paragraf" id="listContainer"></div>
+
+    <script>
+      function cetakList() {
+        // Ambil nilai dari input number
+        const numberInputValue = document.getElementById("numberInput").value;
+
+        // Ambil kontainer <ol> untuk menambahkan <li>
+        const listContainer = document.getElementById("listContainer");
+
+        // Buat loop untuk menambahkan <li> ke dalam <ol>
+        for (let i = 1; i <= numberInputValue; i++) {
+          const listItem = document.createElement("p");
+          listItem.innerHTML =
+            "<p class='text-center'>" +
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat" +
+            "recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo" +
+            "dolorum consequatur sed laudantium suscipit quis magni, maiores in?" +
+            "</p>";
+          listContainer.append(listItem);
+        }
+      }
+
+      // Fungsi untuk mengubah warna teks paragraf secara acak
+      function changeTextColor() {
+        const paragraph = document.querySelector(".paragraf");
+        const colors = ["red", "blue", "green", "orange", "purple", "yellow"];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        paragraph.style.color = randomColor;
+        console.log(randomColor);
+      }
+
+      // Animasi dengan menggunakan setInterval()
+      setInterval(changeTextColor, 1000); // Waktu diatur menjadi 1000ms (1 detik)
+
+      // Fungsi untuk mengembalikan warna teks paragraf ke warna awal
+      function resetTextColor() {
+        const paragraph = document.querySelector(".paragraf");
+        paragraph.style.color = "black"; // Ganti warna awal teks paragraf
+      }
+
+      // Setelah 5 detik, hentikan animasi menggunakan setTimeout()
+      setTimeout(function () {
+        clearInterval(changeTextColor); // Menghentikan animasi menggunakan clearInterval()
+        resetTextColor(); // Mengembalikan warna teks paragraf ke warna awal
+      }, 5000); // Waktu diatur menjadi 5000ms (5 detik)
+    </script>
+  </body>
+</html>
